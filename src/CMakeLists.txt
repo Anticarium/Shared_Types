@@ -13,5 +13,3 @@ add_library(${TARGET_NAME} STATIC ${HEADER_FILES} ${SOURCE_FILES})
 
 find_package(nlohmann_json CONFIG REQUIRED)
 target_link_libraries(${TARGET_NAME} PRIVATE nlohmann_json nlohmann_json::nlohmann_json)
-
-target_include_directories(${TARGET_NAME} PUBLIC shared_types)

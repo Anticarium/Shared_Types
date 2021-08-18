@@ -1,7 +1,9 @@
 #include <iostream>
-//#include ""
+#include <shared_types/serializers/ControlSerializer.hpp>
 
 int main(int argc, char* argv[]) {
-    std::cout << "Hello, world!" << std::endl;
+    shared_types::Control a;
+    a.setIsAuto(true);
+    std::cout << "Is auto: " << a.isAuto() << std::endl;
     return 0;
 }

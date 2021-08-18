@@ -1,6 +1,5 @@
 #include "Control.h"
 
-
 namespace shared_types {
 bool Control::isRaining() const {
     return isRaining_;

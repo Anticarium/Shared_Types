@@ -11,4 +11,5 @@ add_subdirectory("src")
 add_subdirectory("apps")
 
 # TODO: add only if passed parameter -DADD_TESTS=ON
+
 add_subdirectory("tests")

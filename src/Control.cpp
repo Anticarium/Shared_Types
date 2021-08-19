@@ -1,4 +1,4 @@
-#include "Control.h"
+#include <shared_types/Control.h>
 
 namespace shared_types {
 bool Control::isRaining() const {

@@ -1,5 +1,5 @@
 #include <iostream>
-#include <shared_types/serializers/ControlSerializer.hpp>
+#include <shared_types/ControlSerializer.hpp>
 
 int main(int argc, char* argv[]) {
     shared_types::Control a;

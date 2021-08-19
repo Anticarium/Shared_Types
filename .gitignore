@@ -33,3 +33,6 @@
 
 # QT
 CMakeLists.txt.*
+
+# CMake build folder
+/build*

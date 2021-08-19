@@ -1,0 +1,1 @@
+set(TARGET_NAME "shared_types_tests")

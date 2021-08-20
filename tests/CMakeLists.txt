@@ -10,11 +10,20 @@ target_link_libraries(${TARGET_NAME} PUBLIC "shared_types_lib" "shared_types_inc
 
 ADDJSON(${TARGET_NAME})
 
-enable_testing()
+include(FetchContent)
+FetchContent_Declare(
+  googletest
+  URL https://github.com/google/googletest/archive/53495a2a7d6ba7e0691a7f3602e9a5324bba6e45.zip
+)
+# For Windows: Prevent overriding the parent project's compiler/linker settings
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
-find_package(GTest CONFIG REQUIRED)
+FetchContent_MakeAvailable(googletest)
 
-target_link_libraries(${TARGET_NAME} PRIVATE GTest::gmock GTest::gtest GTest::gmock_main GTest::gtest_main)
+enable_testing()
+
+target_link_libraries(${TARGET_NAME} PUBLIC gtest_main)
+
+include(GoogleTest)
 gtest_discover_tests(${TARGET_NAME})
 
 

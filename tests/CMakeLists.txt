@@ -3,14 +3,20 @@ include(GoogleTest)
 
 set(TARGET_NAME shared_types_tests)
 
+set(HEADER_FILES
+    include/shared_types_tests/TestsUtility.hpp
+)
+
 set(SOURCE_FILES
     main.cpp
-    test_serializers/ControlSerializerTest.cpp
+    serializers/ControlSerializerTest.cpp
 )
 add_executable(${TARGET_NAME}
+    ${HEADER_FILES}
     ${SOURCE_FILES}
 )
 
+target_include_directories(${TARGET_NAME} PRIVATE include)
 target_link_libraries(${TARGET_NAME} PRIVATE shared_types_lib shared_types_include)
 
 ADDJSON(${TARGET_NAME})
@@ -26,7 +32,6 @@ enable_testing()
 target_link_libraries(${TARGET_NAME} PRIVATE gtest_main)
 include(GoogleTest)
 gtest_discover_tests(${TARGET_NAME})
-
 
 find_package(Qt6 COMPONENTS Core REQUIRED)
 target_link_libraries(${TARGET_NAME} PRIVATE Qt6::Core)

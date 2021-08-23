@@ -1,6 +1,6 @@
 # REMOVE THIS DIRECTORY AFTER IMPLEMENTING THIS BUILD STRUCTURE IN ANTICARIUM_DESKTOP!!
 
-include(extern_libs)
+include(ExternLibs)
 
 set(TARGET_NAME shared_types_app)
 add_executable(${TARGET_NAME}

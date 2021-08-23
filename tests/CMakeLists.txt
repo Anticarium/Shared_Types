@@ -1,4 +1,4 @@
-include(extern_libs)
+include(ExternLibs)
 include(GoogleTest)
 
 set(TARGET_NAME shared_types_tests)

@@ -6,6 +6,10 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 project("shared_types" VERSION 1.0.0)
 configure_file(VersionConfig.h.in VersionConfig.h)
 
-add_subdirectory("include")
-add_subdirectory("src")
-add_subdirectory("apps")
+add_subdirectory(include)
+add_subdirectory(src)
+add_subdirectory(apps)
+
+if(ADD_TESTS)
+    add_subdirectory(tests)
+endif()

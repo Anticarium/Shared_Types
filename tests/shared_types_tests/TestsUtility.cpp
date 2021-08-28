@@ -1,10 +1,5 @@
-#pragma once
-#include <QFile>
-#include <QString>
-#include <nlohmann/json.hpp>
-/*
- * Returns json from passed path
- */
+#include "TestsUtility.h"
+
 nlohmann::json getJsonFromPath(const QString& path) {
     QFile jsonFile(path);
     if (!jsonFile.open(QIODevice::ReadOnly)) {

@@ -1,7 +1,7 @@
 #include <TestDataDirectory.h>
 #include <gtest/gtest.h>
 #include <shared_types/ControlSerializer.hpp>
-#include <shared_types_tests/TestsUtility.hpp>
+#include <shared_types_tests/TestsUtility.h>
 
 TEST(TestControlSerializer, TestDeserialization) {
     QString filePath = TEST_DATA_DIR;

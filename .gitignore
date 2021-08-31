@@ -30,3 +30,12 @@
 *.exe
 *.out
 *.app
+
+# QT
+CMakeLists.txt.*
+
+# CMake build folder
+/build*
+
+# Clang format
+.clang-format

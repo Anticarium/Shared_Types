@@ -1,0 +1,3 @@
+#pragma once
+
+#define SHARED_TYPES_VERSION "@TARGET_VERSION@"

@@ -9,6 +9,8 @@ set(HEADER_FILES
     shared_types/RegimePropertySerializer.hpp
     shared_types/CustomRegime.h
     shared_types/CustomRegimeSerializer.hpp
+    shared_types/TerrariumData.h
+    shared_types/TerrariumDataSerializer.hpp
 )
 
 add_library(${TARGET_NAME} INTERFACE ${HEADER_FILES})

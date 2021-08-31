@@ -6,6 +6,7 @@ set(SOURCE_FILES
     RegimeRange.cpp
     RegimeProperty.cpp
     CustomRegime.cpp
+    TerrariumData.cpp
 )
 
 add_library(${TARGET_NAME} ${SOURCE_FILES})

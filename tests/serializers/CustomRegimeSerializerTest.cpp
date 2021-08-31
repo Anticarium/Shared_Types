@@ -8,8 +8,8 @@ TEST(TestCustomRegimeSerializer, TestDeserialization) {
     filePath.append("/json_files/CustomRegime.json");
 
     nlohmann::json jsonIn                     = getJsonFromPath(filePath);
-    shared_types::CustomRegime CustomRegimeIn = jsonIn;
-    nlohmann::json json                       = CustomRegimeIn;
+    shared_types::CustomRegime customRegimeIn = jsonIn;
+    nlohmann::json json                       = customRegimeIn;
     shared_types::CustomRegime customRegime   = json;
 
     EXPECT_EQ(customRegime.getTemperature(), 23.1f);

@@ -7,3 +7,4 @@
     - RegimeRange
     - RegimeProperty
     - CustomRegime
+    - TerrariumData

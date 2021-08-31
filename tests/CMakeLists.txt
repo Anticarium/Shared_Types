@@ -12,6 +12,8 @@ set(SOURCE_FILES
     main.cpp
     serializers/ControlSerializerTest.cpp
     serializers/RegimeRangeSerializerTest.cpp
+    serializers/RegimePropertySerializerTest.cpp
+    serializers/CustomRegimeSerializerTest.cpp
     shared_types_tests/TestsUtility.cpp
 )
 

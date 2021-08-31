@@ -2,5 +2,8 @@
 
 - ADD: Google tests for serializers
 - ADD: CMake structure
-- ADD: Control model and serializer
-- ADD: RegimeRange model and serializer
+- ADD: Models and serializers:
+    - Control
+    - RegimeRange
+    - RegimeProperty
+    - CustomRegime

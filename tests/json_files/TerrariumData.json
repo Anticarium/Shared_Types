@@ -1,0 +1,67 @@
+{
+  "control": {
+    "auto_status": true,
+    "heat_status": true,
+    "rain_status": true,
+    "light_percentage": 23,
+    "wind_percentage": 12
+  },
+  "custom_regimes": [
+    {
+      "temperature": 23.1,
+      "name": "regime_1",
+      "rain": {
+        "value": 123,
+        "is_random": true,
+        "range": {
+          "from": 6,
+          "to": 100
+        }
+      },
+      "light": {
+        "value": 2,
+        "is_random": true,
+        "range": {
+          "from": 2,
+          "to": 5
+        }
+      },
+      "wind": {
+        "value": 255,
+        "is_random": true,
+        "range": {
+          "from": 1,
+          "to": 2
+        }
+      }
+    },
+    {
+      "temperature": 23.1,
+      "name": "regime_2",
+      "rain": {
+        "value": 123,
+        "is_random": true,
+        "range": {
+          "from": 6,
+          "to": 100
+        }
+      },
+      "light": {
+        "value": 2,
+        "is_random": true,
+        "range": {
+          "from": 2,
+          "to": 5
+        }
+      },
+      "wind": {
+        "value": 255,
+        "is_random": true,
+        "range": {
+          "from": 1,
+          "to": 2
+        }
+      }
+    }
+  ]
+}

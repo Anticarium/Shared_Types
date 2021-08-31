@@ -5,6 +5,10 @@ set(HEADER_FILES
     shared_types/ControlSerializer.hpp
     shared_types/RegimeRange.h
     shared_types/RegimeRangeSerializer.hpp
+    shared_types/RegimeProperty.h
+    shared_types/RegimePropertySerializer.hpp
+    shared_types/CustomRegime.h
+    shared_types/CustomRegimeSerializer.hpp
 )
 
 add_library(${TARGET_NAME} INTERFACE ${HEADER_FILES})

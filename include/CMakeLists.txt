@@ -15,5 +15,4 @@ set(HEADER_FILES
 
 add_library(${TARGET_NAME} INTERFACE ${HEADER_FILES})
 
-target_include_directories(${TARGET_NAME} INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}>
-    )
+target_include_directories(${TARGET_NAME} INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}>)

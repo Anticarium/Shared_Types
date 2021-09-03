@@ -18,9 +18,9 @@ if(ADD_TESTS)
     add_subdirectory(tests)
 endif()
 
-install(DIRECTORY ${PROJECT_SOURCE_DIR}/include/ DESTINATION ${CMAKE_INSTALL_PREFIX}/${PROJECT_NAME}/include)
-install(DIRECTORY ${PROJECT_SOURCE_DIR}/src/ DESTINATION ${CMAKE_INSTALL_PREFIX}/${PROJECT_NAME}/src)
-install(TARGETS shared_types_include shared_types_lib EXPORT shared_types_export DESTINATION
-    ${CMAKE_INSTALL_PREFIX}/${PROJECT_NAME}/build)
+#install(DIRECTORY ${PROJECT_SOURCE_DIR}/include/ DESTINATION ${CMAKE_INSTALL_PREFIX}/${PROJECT_NAME}/include)
+#install(DIRECTORY ${PROJECT_SOURCE_DIR}/src/ DESTINATION ${CMAKE_INSTALL_PREFIX}/${PROJECT_NAME}/src)
+#install(TARGETS shared_types_include shared_types_lib EXPORT shared_types_export DESTINATION
+#    ${CMAKE_INSTALL_PREFIX}/${PROJECT_NAME}/build)
 
-install(EXPORT shared_types_export FILE ${PROJECT_NAME}-config.cmake DESTINATION ${CMAKE_INSTALL_PREFIX}/${PROJECT_NAME})
+#install(EXPORT shared_types_export FILE ${PROJECT_NAME}-config.cmake DESTINATION ${CMAKE_INSTALL_PREFIX}/${PROJECT_NAME})

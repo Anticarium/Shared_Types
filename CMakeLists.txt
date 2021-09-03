@@ -8,7 +8,7 @@ set(CMAKE_INSTALL_PREFIX ${CMAKE_BINARY_DIR}/_deps)
 FILE(READ VERSION CURRENT_VERSION)
 project(${TARGET_NAME} VERSION ${CURRENT_VERSION})
 message(STATUS "Adding ${TARGET_NAME} v${CURRENT_VERSION}")
-configure_file(VersionConfig.h.in VersionConfig.h)
+configure_file(VersionConfig.h.in ${TARGET_NAME}_VersionConfig.h)
 
 add_subdirectory(include)
 add_subdirectory(src)

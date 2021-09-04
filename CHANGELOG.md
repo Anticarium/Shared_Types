@@ -3,6 +3,7 @@
 ## 1.0.2
 - ADD: SensorData model and serializer
 - ADD: currentMode parameter in TerrariumData model and serializer
+- REMOVE: apps subdirectory
 
 ## 1.0.1
 - ADD: This library now gets fetched into `_deps` folder of build

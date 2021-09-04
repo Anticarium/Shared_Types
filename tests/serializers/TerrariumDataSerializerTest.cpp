@@ -15,6 +15,7 @@ TEST(TestTerrariumDataSerializer, TestDeserialization) {
     EXPECT_EQ(terrariumData.getControl().getLightPercentage(), 23);
     EXPECT_EQ(terrariumData.getCustomRegimes()[0].getName(), "regime_1");
     EXPECT_EQ(terrariumData.getCustomRegimes()[1].getName(), "regime_2");
+    EXPECT_EQ(terrariumData.getCurrentRegime(), "regime_1");
 }
 
 TEST(TestTerrariumDataSerializer, TestSerialization) {
@@ -27,4 +28,5 @@ TEST(TestTerrariumDataSerializer, TestSerialization) {
     EXPECT_EQ(terrariumData.getControl().getLightPercentage(), 23);
     EXPECT_EQ(terrariumData.getCustomRegimes()[0].getName(), "regime_1");
     EXPECT_EQ(terrariumData.getCustomRegimes()[1].getName(), "regime_2");
+    EXPECT_EQ(terrariumData.getCurrentRegime(), "regime_1");
 }

@@ -16,4 +16,12 @@ const std::vector<CustomRegime>& TerrariumData::getCustomRegimes() const {
 void TerrariumData::setCustomRegimes(const std::vector<CustomRegime>& newCustomRegimes) {
     customRegimes_ = newCustomRegimes;
 }
+
+const QString& TerrariumData::getCurrentRegime() const {
+    return currentRegime_;
+}
+
+void TerrariumData::setCurrentRegime(const QString& newCurrentRegime) {
+    currentRegime_ = newCurrentRegime;
+}
 } // namespace shared_types

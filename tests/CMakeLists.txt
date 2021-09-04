@@ -15,6 +15,7 @@ set(SOURCE_FILES
     serializers/RegimePropertySerializerTest.cpp
     serializers/CustomRegimeSerializerTest.cpp
     serializers/TerrariumDataSerializerTest.cpp
+    serializers/SensorDataSerializerTest.cpp
     shared_types_tests/TestsUtility.cpp
 )
 

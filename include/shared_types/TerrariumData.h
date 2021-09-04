@@ -10,9 +10,12 @@ class TerrariumData {
     void setControl(const Control& newControl);
     const std::vector<CustomRegime>& getCustomRegimes() const;
     void setCustomRegimes(const std::vector<CustomRegime>& newCustomRegimes);
+    const QString& getCurrentRegime() const;
+    void setCurrentRegime(const QString& newCurrentRegime);
 
   private:
     Control control_;
     std::vector<CustomRegime> customRegimes_;
+    QString currentRegime_ = "";
 };
 } // namespace shared_types

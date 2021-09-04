@@ -1,4 +1,5 @@
 #pragma once
+#include <QString>
 
 namespace shared_types {
 class Control {

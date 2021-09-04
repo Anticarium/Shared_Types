@@ -1,4 +1,5 @@
 {
+  "current_regime": "regime_1",
   "control": {
     "auto_status": true,
     "heat_status": true,

@@ -12,7 +12,6 @@ configure_file(VersionConfig.h.in ${TARGET_NAME}_VersionConfig.h)
 
 add_subdirectory(include)
 add_subdirectory(src)
-add_subdirectory(apps)
 
 if(ADD_TESTS)
     add_subdirectory(tests)

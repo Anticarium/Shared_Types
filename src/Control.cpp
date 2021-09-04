@@ -40,5 +40,4 @@ bool Control::isAuto() const {
 void Control::setIsAuto(bool newIsAuto) {
     isAuto_ = newIsAuto;
 }
-
 } // namespace shared_types

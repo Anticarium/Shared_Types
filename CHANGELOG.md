@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## 1.0.2
+## 1.1.2
 - ADD: SensorData model and serializer
 - ADD: currentMode parameter in TerrariumData model and serializer
 - REMOVE: apps subdirectory

@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 1.1.3
+- MODIFY: Downgraded to Qt5
+
 ## 1.1.2
 - ADD: SensorData model and serializer
 - ADD: currentMode parameter in TerrariumData model and serializer

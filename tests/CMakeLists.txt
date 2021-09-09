@@ -32,6 +32,6 @@ target_link_libraries(${TARGET_NAME} PRIVATE shared_types_lib shared_types_inclu
 
 ADDJSON(${TARGET_NAME})
 ADDGTEST(${TARGET_NAME})
-ADDQT6CORE(${TARGET_NAME})
+ADDQT5CORE(${TARGET_NAME})
 
 

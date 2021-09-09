@@ -6,18 +6,15 @@ endfunction()
 function(ADDGTEST TARGET_NAME)
 	include(FetchContent)
 	FetchContent_Declare(
-	  googletest
-	  URL https://github.com/google/googletest/archive/2f80c2ba71c0e8922a03b9b855e5b019ad1f7064.zip
+		googletest
+		URL https://github.com/google/googletest/archive/2f80c2ba71c0e8922a03b9b855e5b019ad1f7064.zip
 	)
 	set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
-	FetchContent_MakeAvailable(googletest)
-	enable_testing()
 	target_link_libraries(${TARGET_NAME} PRIVATE gtest_main)
-	include(GoogleTest)
-	gtest_discover_tests(${TARGET_NAME})
+	FetchContent_MakeAvailable(googletest)
 endfunction()
 
-function(ADDQT6CORE TARGET_NAME)
-	find_package(Qt6 COMPONENTS Core REQUIRED)
-	target_link_libraries(${TARGET_NAME} PRIVATE Qt6::Core)
+function(ADDQT5CORE TARGET_NAME)
+	find_package(Qt5 COMPONENTS Core REQUIRED)
+	target_link_libraries(${TARGET_NAME} PRIVATE Qt5::Core)
 endfunction()

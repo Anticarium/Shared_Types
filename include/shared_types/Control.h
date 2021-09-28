@@ -15,11 +15,18 @@ class Control {
     bool isAuto() const;
     void setIsAuto(bool newIsAuto);
 
+    int getHumidityPercentage() const;
+    void setHumidityPercentage(int newHumidityPercentage);
+    float getTemperature() const;
+    void setTemperature(float newTemperature);
+
   private:
-    bool isRaining_      = false;
-    bool isHeating_      = false;
-    int lightPercentage_ = 0;
-    int windPercentage_  = 0;
-    bool isAuto_         = false;
+    bool isRaining_         = false;
+    bool isHeating_         = false;
+    int lightPercentage_    = 0;
+    int windPercentage_     = 0;
+    bool isAuto_            = false;
+    int humidityPercentage_ = 0.0f;
+    float temperature_      = 0.0f;
 };
 } // namespace shared_types

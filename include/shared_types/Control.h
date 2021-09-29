@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include <QString>
 
 namespace shared_types {
@@ -15,8 +15,8 @@ class Control {
     bool isAuto() const;
     void setIsAuto(bool newIsAuto);
 
-    int getHumidityPercentage() const;
-    void setHumidityPercentage(int newHumidityPercentage);
+    int getMoisturePercentage() const;
+    void setMoisturePercentage(int newMoisturePercentage);
     float getTemperature() const;
     void setTemperature(float newTemperature);
 
@@ -26,7 +26,7 @@ class Control {
     int lightPercentage_    = 0;
     int windPercentage_     = 0;
     bool isAuto_            = false;
-    int humidityPercentage_ = 0.0f;
+    int moisturePercentage_ = 0.0f;
     float temperature_      = 0.0f;
 };
 } // namespace shared_types

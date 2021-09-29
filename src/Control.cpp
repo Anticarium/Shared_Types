@@ -41,12 +41,12 @@ void Control::setIsAuto(bool newIsAuto) {
     isAuto_ = newIsAuto;
 }
 
-int Control::getHumidityPercentage() const {
-    return humidityPercentage_;
+int Control::getMoisturePercentage() const {
+    return moisturePercentage_;
 }
 
-void Control::setHumidityPercentage(int newHumidityPercentage) {
-    humidityPercentage_ = newHumidityPercentage;
+void Control::setMoisturePercentage(int newMoisturePercentage) {
+    moisturePercentage_ = newMoisturePercentage;
 }
 
 float Control::getTemperature() const {

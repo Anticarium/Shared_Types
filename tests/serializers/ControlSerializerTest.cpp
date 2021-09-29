@@ -17,7 +17,7 @@ TEST(TestControlSerializer, TestDeserialization) {
     EXPECT_EQ(control.isAuto(), true);
     EXPECT_EQ(control.getLightPercentage(), 23);
     EXPECT_EQ(control.getWindPercentage(), 12);
-    EXPECT_EQ(control.getHumidityPercentage(), 76);
+    EXPECT_EQ(control.getMoisturePercentage(), 76);
     EXPECT_EQ(control.getTemperature(), 32.4f);
 }
 
@@ -33,6 +33,6 @@ TEST(TestControlSerializer, TestSerialization) {
     EXPECT_EQ(control.isAuto(), true);
     EXPECT_EQ(control.getLightPercentage(), 23);
     EXPECT_EQ(control.getWindPercentage(), 12);
-    EXPECT_EQ(control.getHumidityPercentage(), 76);
+    EXPECT_EQ(control.getMoisturePercentage(), 76);
     EXPECT_EQ(control.getTemperature(), 32.4f);
 }

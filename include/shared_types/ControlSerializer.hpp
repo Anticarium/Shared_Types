@@ -9,13 +9,17 @@ inline void from_json(const json& j, shared_types::Control& x) {
     x.setIsRaining(j.at("rain_status").get<bool>());
     x.setLightPercentage(j.at("light_percentage").get<int>());
     x.setWindPercentage(j.at("wind_percentage").get<int>());
+    x.setMoisturePercentage(j.at("moisture_percentage").get<int>());
+    x.setTemperature(j.at("temperature").get<float>());
 }
 
 inline void to_json(json& j, const shared_types::Control& x) {
-    j["auto_status"]      = x.isAuto();
-    j["heat_status"]      = x.isHeating();
-    j["rain_status"]      = x.isRaining();
-    j["light_percentage"] = x.getLightPercentage();
-    j["wind_percentage"]  = x.getWindPercentage();
+    j["auto_status"]         = x.isAuto();
+    j["heat_status"]         = x.isHeating();
+    j["rain_status"]         = x.isRaining();
+    j["light_percentage"]    = x.getLightPercentage();
+    j["wind_percentage"]     = x.getWindPercentage();
+    j["moisture_percentage"] = x.getMoisturePercentage();
+    j["temperature"]         = x.getTemperature();
 }
 } // namespace nlohmann

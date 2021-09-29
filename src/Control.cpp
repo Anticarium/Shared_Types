@@ -40,4 +40,20 @@ bool Control::isAuto() const {
 void Control::setIsAuto(bool newIsAuto) {
     isAuto_ = newIsAuto;
 }
+
+int Control::getMoisturePercentage() const {
+    return moisturePercentage_;
+}
+
+void Control::setMoisturePercentage(int newMoisturePercentage) {
+    moisturePercentage_ = newMoisturePercentage;
+}
+
+float Control::getTemperature() const {
+    return temperature_;
+}
+
+void Control::setTemperature(float newTemperature) {
+    temperature_ = newTemperature;
+}
 } // namespace shared_types

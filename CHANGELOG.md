@@ -1,5 +1,8 @@
 # CHANGELOG
 
+- ADD: MoisturePercentage parameter in Control
+- ADD: Temperature parameter in Control
+
 ## 1.1.3
 - MODIFY: Downgraded to Qt5
 

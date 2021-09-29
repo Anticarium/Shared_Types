@@ -1,5 +1,6 @@
 # CHANGELOG
 
+## 1.1.4
 - ADD: MoisturePercentage parameter in Control
 - ADD: Temperature parameter in Control
 

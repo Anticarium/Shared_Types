@@ -11,10 +11,6 @@ set(HEADER_FILES
 set(SOURCE_FILES
     main.cpp
     serializers/ControlSerializerTest.cpp
-    serializers/RegimeRangeSerializerTest.cpp
-    serializers/RegimePropertySerializerTest.cpp
-    serializers/CustomRegimeSerializerTest.cpp
-    serializers/TerrariumDataSerializerTest.cpp
     serializers/SensorDataSerializerTest.cpp
     serializers/RegimeValueSerializerTest.cpp
     serializers/RegimesSerializerTest.cpp

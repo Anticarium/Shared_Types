@@ -5,14 +5,6 @@ set(HEADER_FILES
     shared_types/ControlSerializer.hpp
     shared_types/SensorData.h
     shared_types/SensorDataSerializer.hpp
-    shared_types/RegimeRange.h
-    shared_types/RegimeRangeSerializer.hpp
-    shared_types/RegimeProperty.h
-    shared_types/RegimePropertySerializer.hpp
-    shared_types/CustomRegime.h
-    shared_types/CustomRegimeSerializer.hpp
-    shared_types/TerrariumData.h
-    shared_types/TerrariumDataSerializer.hpp
     shared_types/RegimeValue.h
     shared_types/RegimeValueSerializer.hpp
     shared_types/Regimes.h

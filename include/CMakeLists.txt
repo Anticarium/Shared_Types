@@ -9,8 +9,8 @@ set(HEADER_FILES
     shared_types/RegimeValueSerializer.hpp
     shared_types/Regimes.h
     shared_types/RegimesSerializer.hpp
-    shared_types/CurrentRegime.h
-    shared_types/CurrentRegimeSerializer.hpp
+    shared_types/Regime.h
+    shared_types/RegimeSerializer.hpp
 )
 
 add_library(${TARGET_NAME} INTERFACE ${HEADER_FILES})

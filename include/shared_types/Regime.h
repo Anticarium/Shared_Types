@@ -3,10 +3,10 @@
 #include <QString>
 
 namespace shared_types {
-class CurrentRegime {
+class Regime {
   public:
-    QString getCurrentRegime() const;
-    void setCurrentRegime(const QString& regime);
+    QString getRegime() const;
+    void setRegime(const QString& regime);
 
   private:
     QString regime_;

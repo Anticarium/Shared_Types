@@ -6,7 +6,7 @@ set(SOURCE_FILES
     SensorData.cpp
     RegimeValue.cpp
     Regimes.cpp
-    CurrentRegime.cpp
+    Regime.cpp
 )
 
 include(ExternLibs)

@@ -14,6 +14,7 @@ set(SOURCE_FILES
     serializers/SensorDataSerializerTest.cpp
     serializers/RegimeValueSerializerTest.cpp
     serializers/RegimesSerializerTest.cpp
+    serializers/RegimeNameSerializerTest.cpp
     serializers/RegimeSerializerTest.cpp
     shared_types_tests/TestsUtility.cpp
 )

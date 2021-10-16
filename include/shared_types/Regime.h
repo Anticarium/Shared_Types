@@ -1,14 +1,18 @@
 #pragma once
 
-#include <QString>
+#include <shared_types/RegimeName.h>
+#include <shared_types/RegimeValue.h>
 
 namespace shared_types {
 class Regime {
   public:
-    QString getRegime() const;
-    void setRegime(const QString& regime);
+    const shared_types::RegimeName& getRegimeName() const;
+    void setRegimeName(const shared_types::RegimeName& regimeName);
+    const shared_types::RegimeValue& getRegimeValue() const;
+    void setRegimeValue(const shared_types::RegimeValue& regimeValue);
 
   private:
-    QString regime_;
+    shared_types::RegimeName regimeName_;
+    shared_types::RegimeValue regimeValue_;
 };
 } // namespace shared_types

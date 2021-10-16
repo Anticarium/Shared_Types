@@ -8,6 +8,9 @@ set(SOURCE_FILES
     CustomRegime.cpp
     TerrariumData.cpp
     SensorData.cpp
+    RegimeValue.cpp
+    Regimes.cpp
+    CurrentRegime.cpp
 )
 
 include(ExternLibs)

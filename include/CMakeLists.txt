@@ -13,6 +13,12 @@ set(HEADER_FILES
     shared_types/CustomRegimeSerializer.hpp
     shared_types/TerrariumData.h
     shared_types/TerrariumDataSerializer.hpp
+    shared_types/RegimeValue.h
+    shared_types/RegimeValueSerializer.hpp
+    shared_types/Regimes.h
+    shared_types/RegimesSerializer.hpp
+    shared_types/CurrentRegime.h
+    shared_types/CurrentRegimeSerializer.hpp
 )
 
 add_library(${TARGET_NAME} INTERFACE ${HEADER_FILES})

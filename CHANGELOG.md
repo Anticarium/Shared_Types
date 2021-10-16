@@ -1,5 +1,19 @@
 # CHANGELOG
 
+MODIFY: `SensorData` now inherits `RegimeValue`
+
+ADD: Models and serializers:
+	- Regimes
+	- Regime
+	- RegimeValue
+	- RegimeName
+
+REMOVE: Models and serializers:
+	- RegimeRange
+	- RegimeProperty
+	- CustomRegime
+	- TerrariumData
+
 ## 1.1.4
 - ADD: MoisturePercentage parameter in Control
 - ADD: Temperature parameter in Control

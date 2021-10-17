@@ -1,32 +1,20 @@
 ﻿#pragma once
 #include <QString>
+#include <shared_types/RegimeValue.h>
 
 namespace shared_types {
 class Control {
   public:
-    bool isRaining() const;
-    void setIsRaining(bool newIsRaining);
-    bool isHeating() const;
-    void setIsHeating(bool newIsHeating);
     int getLightPercentage() const;
     void setLightPercentage(int newLightPercentage);
     int getWindPercentage() const;
     void setWindPercentage(int newWindPercentage);
-    bool isAuto() const;
-    void setIsAuto(bool newIsAuto);
-
-    int getMoisturePercentage() const;
-    void setMoisturePercentage(int newMoisturePercentage);
-    float getTemperature() const;
-    void setTemperature(float newTemperature);
+    shared_types::RegimeValue getRegimeValue() const;
+    void setRegimeValue(const shared_types::RegimeValue& regimeValue);
 
   private:
-    bool isRaining_         = false;
-    bool isHeating_         = false;
-    int lightPercentage_    = 0;
-    int windPercentage_     = 0;
-    bool isAuto_            = false;
-    int moisturePercentage_ = 0.0f;
-    float temperature_      = 0.0f;
+    int lightPercentage_ = 0;
+    int windPercentage_  = 0;
+    shared_types::RegimeValue regimeValue_;
 };
 } // namespace shared_types

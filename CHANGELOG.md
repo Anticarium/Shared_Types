@@ -1,13 +1,12 @@
 # CHANGELOG
 
+## 1.2.0
 MODIFY: `SensorData` now inherits `RegimeValue`
-
 ADD: Models and serializers:
 	- Regimes
 	- Regime
 	- RegimeValue
 	- RegimeName
-
 REMOVE: Models and serializers:
 	- RegimeRange
 	- RegimeProperty

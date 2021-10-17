@@ -13,6 +13,6 @@ configure_file(VersionConfig.h.in ${TARGET_NAME}_VersionConfig.h)
 add_subdirectory(include)
 add_subdirectory(src)
 
-if(ADD_TESTS)
+if(ADD_${TARGET_NAME}_TESTS)
     add_subdirectory(tests)
 endif()

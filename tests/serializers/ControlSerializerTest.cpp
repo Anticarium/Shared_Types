@@ -12,13 +12,10 @@ TEST(TestControlSerializer, TestDeserialization) {
     nlohmann::json json             = controlIn;
     shared_types::Control control   = json;
 
-    EXPECT_EQ(control.isRaining(), true);
-    EXPECT_EQ(control.isHeating(), true);
-    EXPECT_EQ(control.isAuto(), true);
     EXPECT_EQ(control.getLightPercentage(), 23);
     EXPECT_EQ(control.getWindPercentage(), 12);
-    EXPECT_EQ(control.getMoisturePercentage(), 76);
-    EXPECT_EQ(control.getTemperature(), 32.4f);
+    EXPECT_EQ(control.getRegimeValue().getMoisture(), 76);
+    EXPECT_EQ(control.getRegimeValue().getTemperature(), 32.4f);
 }
 
 TEST(TestControlSerializer, TestSerialization) {
@@ -28,11 +25,8 @@ TEST(TestControlSerializer, TestSerialization) {
     nlohmann::json jsonIn         = getJsonFromPath(filePath);
     shared_types::Control control = jsonIn;
 
-    EXPECT_EQ(control.isRaining(), true);
-    EXPECT_EQ(control.isHeating(), true);
-    EXPECT_EQ(control.isAuto(), true);
     EXPECT_EQ(control.getLightPercentage(), 23);
     EXPECT_EQ(control.getWindPercentage(), 12);
-    EXPECT_EQ(control.getMoisturePercentage(), 76);
-    EXPECT_EQ(control.getTemperature(), 32.4f);
+    EXPECT_EQ(control.getRegimeValue().getMoisture(), 76);
+    EXPECT_EQ(control.getRegimeValue().getTemperature(), 32.4f);
 }

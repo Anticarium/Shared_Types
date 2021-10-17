@@ -3,11 +3,11 @@ set(TARGET_NAME shared_types_lib)
 
 set(SOURCE_FILES
     Control.cpp
-    RegimeRange.cpp
-    RegimeProperty.cpp
-    CustomRegime.cpp
-    TerrariumData.cpp
     SensorData.cpp
+    RegimeValue.cpp
+    Regimes.cpp
+    RegimeName.cpp
+    Regime.cpp
 )
 
 include(ExternLibs)

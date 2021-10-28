@@ -16,7 +16,8 @@ set(SOURCE_FILES
     serializers/RegimesSerializerTest.cpp
     serializers/RegimeNameSerializerTest.cpp
     serializers/RegimeSerializerTest.cpp
-    shared_types_tests/TestsUtility.cpp
+    serializers/SavedRegimesSerializerTest.cpp
+    shared_types_tests/TestsUtility.cpp    
 )
 
 

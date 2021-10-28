@@ -13,6 +13,8 @@ set(HEADER_FILES
     shared_types/RegimeNameSerializer.hpp
     shared_types/Regime.h
     shared_types/RegimeSerializer.hpp
+    shared_types/SavedRegimes.h
+    shared_types/SavedRegimesSerializer.hpp
 )
 
 add_library(${TARGET_NAME} INTERFACE ${HEADER_FILES})

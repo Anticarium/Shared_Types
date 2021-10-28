@@ -8,6 +8,7 @@ set(SOURCE_FILES
     Regimes.cpp
     RegimeName.cpp
     Regime.cpp
+    SavedRegimes.cpp
 )
 
 include(ExternLibs)

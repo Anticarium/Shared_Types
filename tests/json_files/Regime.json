@@ -1,7 +1,9 @@
 {
-	"regime_name": 
+	
+	"name": "mode_1",
+	"regime_id": 
 	{
-		"regime_name": "mode_1"
+		"id": 3
 	},
 	"regime_value": 
 	{

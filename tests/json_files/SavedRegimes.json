@@ -1,8 +1,10 @@
 {
   "saved_regimes": [
     {
-      "regime_name": {
-        "regime_name": "mode_1"
+      "name": "mode_1",
+      "regime_id": 
+      {
+        "id": 3
       },
       "regime_value": {
         "temperature": 23.1,
@@ -10,18 +12,22 @@
       }
     },
     {
-      "regime_name": {
-        "regime_name": "mode_2"
-      },
+      "name": "mode_2",
+	"regime_id": 
+	{
+		"id": 4
+	},
       "regime_value": {
         "temperature": 15.5,
         "moisture": 78
       }
     },
     {
-      "regime_name": {
-        "regime_name": "mode_3"
-      },
+      "name": "mode_3",
+	"regime_id": 
+	{
+		"id": 5
+	},
       "regime_value": {
         "temperature": 35.8,
         "moisture": 10

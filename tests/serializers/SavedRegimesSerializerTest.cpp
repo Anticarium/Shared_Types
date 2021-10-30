@@ -12,7 +12,7 @@ TEST(TestSavedRegimesSerializer, TestDeserialization) {
     nlohmann::json json                       = savedRegimesIn;
     shared_types::SavedRegimes savedRegimes   = json;
 
-    EXPECT_EQ(savedRegimes.getSavedRegimes()[0].getRegimeName().getName(), "mode_1");
+    EXPECT_EQ(savedRegimes.getSavedRegimes()[0].getName(), "mode_1");
     EXPECT_EQ(savedRegimes.getSavedRegimes()[2].getRegimeValue().getTemperature(), 35.8f);
 }
 
@@ -23,6 +23,6 @@ TEST(TestSavedRegimesSerializer, TestSerialization) {
     nlohmann::json jsonIn                   = getJsonFromPath(filePath);
     shared_types::SavedRegimes savedRegimes = jsonIn;
 
-    EXPECT_EQ(savedRegimes.getSavedRegimes()[0].getRegimeName().getName(), "mode_1");
+    EXPECT_EQ(savedRegimes.getSavedRegimes()[0].getName(), "mode_1");
     EXPECT_EQ(savedRegimes.getSavedRegimes()[2].getRegimeValue().getTemperature(), 35.8f);
 }

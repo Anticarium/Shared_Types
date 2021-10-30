@@ -2,12 +2,11 @@
 
 namespace shared_types {
 
-const shared_types::RegimeName& Regime::getRegimeName() const {
-    return regimeName_;
+QString Regime::getName() const {
+    return name_;
 }
-
-void Regime::setRegimeName(const shared_types::RegimeName& regimeName) {
-    regimeName_ = regimeName;
+void Regime::setName(const QString& name) {
+    name_ = name;
 }
 
 const shared_types::RegimeValue& Regime::getRegimeValue() const {
@@ -16,6 +15,14 @@ const shared_types::RegimeValue& Regime::getRegimeValue() const {
 
 void Regime::setRegimeValue(const shared_types::RegimeValue& regimeValue) {
     regimeValue_ = regimeValue;
+}
+
+shared_types::RegimeId Regime::getRegimeId() const {
+    return regimeId_;
+}
+
+void Regime::setRegimeId(const shared_types::RegimeId& regimeId) {
+    regimeId_ = regimeId;
 }
 
 } // namespace shared_types

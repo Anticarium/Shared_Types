@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 1.3.0
+ADD: SavedRegimes model and serializer
+ADD: RegimeId model and serializer
+REMOVE: RegimeName
+MODIFY: Regime now contains RegimeId model
+MODIFY: Replaced RegimeName model with `name` key in Regime 
+
 ## 1.2.0
 MODIFY: `SensorData` now inherits `RegimeValue`
 ADD: Models and serializers:

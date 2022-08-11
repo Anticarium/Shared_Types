@@ -16,6 +16,8 @@ TEST(TestControlSerializer, TestDeserialization) {
     EXPECT_EQ(control.getWindPercentage(), 12);
     EXPECT_EQ(control.getRegimeValue().getMoisture(), 76);
     EXPECT_EQ(control.getRegimeValue().getTemperature(), 32.4f);
+    EXPECT_EQ(control.allowHeat(), false);
+    EXPECT_EQ(control.allowWater(), false);
 }
 
 TEST(TestControlSerializer, TestSerialization) {
@@ -29,4 +31,6 @@ TEST(TestControlSerializer, TestSerialization) {
     EXPECT_EQ(control.getWindPercentage(), 12);
     EXPECT_EQ(control.getRegimeValue().getMoisture(), 76);
     EXPECT_EQ(control.getRegimeValue().getTemperature(), 32.4f);
+    EXPECT_EQ(control.allowHeat(), false);
+    EXPECT_EQ(control.allowWater(), false);
 }

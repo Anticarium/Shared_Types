@@ -1,5 +1,8 @@
 # CHANGELOG
 
+ADD: `allow_heat` field to Control model
+ADD: `allow_water` field to Control model
+
 ## 1.3.0
 ADD: SavedRegimes model and serializer
 ADD: RegimeId model and serializer

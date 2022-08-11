@@ -26,5 +26,20 @@ void Control::setRegimeValue(const shared_types::RegimeValue& regimeValue) {
     regimeValue_ = regimeValue;
 }
 
+bool Control::allowHeat() const {
+    return allowHeat_;
+}
+
+void Control::setAllowHeat(bool allowHeat) {
+    allowHeat_ = allowHeat;
+}
+
+bool Control::allowWater() const {
+    return allowWater_;
+}
+
+void Control::setAllowWater(bool allowWater) {
+    allowWater_ = allowWater;
+}
 
 } // namespace shared_types

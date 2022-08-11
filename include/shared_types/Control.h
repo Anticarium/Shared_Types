@@ -12,9 +12,19 @@ class Control {
     shared_types::RegimeValue getRegimeValue() const;
     void setRegimeValue(const shared_types::RegimeValue& regimeValue);
 
+    bool allowHeat() const;
+    void setAllowHeat(bool allowHeat);
+
+    bool allowWater() const;
+    void setAllowWater(bool allowWater);
+
   private:
     int lightPercentage_ = 0;
     int windPercentage_  = 0;
+
+    bool allowHeat_  = true;
+    bool allowWater_ = true;
+
     shared_types::RegimeValue regimeValue_;
 };
 } // namespace shared_types
